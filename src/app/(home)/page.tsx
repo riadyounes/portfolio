@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { twMerge } from 'tailwind-merge'
 
-import { Card } from '@/components/card'
+import { CardHome } from '@/components/card-home'
 import { jetBrainsMono } from '@/utils/font'
 
 export const metadata: Metadata = {
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-zinc-950 py-4">
+    <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden bg-zinc-950 py-4">
       <div className="z-20 mx-auto max-w-[1280px] px-6">
         <div className="flex flex-col items-center gap-4">
           <h1
@@ -21,35 +21,35 @@ export default function Home() {
           >
             Riad Younes
           </h1>
-          <p className="text-xl  text-white">
+          <p className="text-xl font-medium text-zinc-300">
             Graduado em análise e desenvolvimento de sistemas e engenharia de
             software
           </p>
 
           <div className="grid w-full grid-cols-2 gap-6">
             <div className="col-span-2 lg:col-span-1">
-              <Card
+              <CardHome
                 href="/projects"
                 title="Projetos"
                 description="Aqui você encontrará uma coleção dos meus projetos, detalhes sobre as tecnologias utilizadas e muito mais."
               />
             </div>
             <div className="col-span-2 lg:col-span-1">
-              <Card
+              <CardHome
                 href="/"
                 title="Experiência"
                 description="Explore minha jornada profissional, destacando minha experiência, habilidades e conquistas."
               />
             </div>
             <div className="col-span-2 lg:col-span-1">
-              <Card
+              <CardHome
                 href="/"
                 title="Blog"
                 description="Dicas e tutoriais de programação, onde compartilho conhecimento e insights valiosos."
               />
             </div>
             <div className="col-span-2 lg:col-span-1">
-              <Card
+              <CardHome
                 href="/"
                 title="Contato"
                 description="Vamos bater um papo! Aberto para novos projetos e ideias inovadoras."

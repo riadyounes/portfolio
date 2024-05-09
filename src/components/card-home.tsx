@@ -10,7 +10,7 @@ export interface CardProps extends HTMLProps<HTMLDivElement> {
   href: string
 }
 
-export function Card({
+export function CardHome({
   title,
   description,
   href,
@@ -19,8 +19,8 @@ export function Card({
 }: CardProps) {
   return (
     <Link href={href}>
-      <div className={twMerge(className, 'group')} {...props}>
-        <div className="flex h-40 flex-col gap-2 rounded-lg border border-white from-white via-white via-30% to-white/30 px-8 py-4 text-zinc-100 duration-300 hover:border-none group-hover:bg-gradient-to-br lg:gap-4">
+      <div className={twMerge(className, 'group ')} {...props}>
+        <div className="flex h-40 flex-col gap-2 rounded-lg border border-zinc-500  from-white via-white via-30% to-white/30 px-8 py-4 hover:border-none group-hover:bg-gradient-to-br lg:gap-4">
           <h3
             className={twMerge(
               jetBrainsMono.className,
