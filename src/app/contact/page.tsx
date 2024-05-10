@@ -1,4 +1,6 @@
+import { Github, Linkedin, Mail } from 'lucide-react'
 import { Metadata } from 'next'
+import Link from 'next/link'
 
 import {
   Breadcrumb,
@@ -31,7 +33,32 @@ export default function Contact() {
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          <div className="flex flex-col gap-4 text-white">teste</div>
+          <div className="flex flex-col gap-2">
+            <Link
+              href="https://github.com/riadyounes"
+              className="flex items-center gap-2 rounded-lg px-2 py-4 text-zinc-400 transition-all hover:bg-zinc-800 hover:text-zinc-100"
+              target="_blank"
+            >
+              <Github className="size-6 " />
+              <span className="">github.com/riadyounes</span>
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/riad-younes-6a5348187/"
+              className="flex items-center gap-2 rounded-lg px-2 py-4 text-zinc-400 transition-all hover:bg-zinc-800 hover:text-zinc-100"
+              target="_blank"
+            >
+              <Linkedin className="size-6" />
+              linkedin.com/in/riadyounes
+            </Link>
+            <Link
+              href="mailto:riad.younes@hotmail.com"
+              className="flex items-center gap-2 rounded-lg px-2 py-4 text-zinc-400 transition-all hover:bg-zinc-800 hover:text-zinc-100"
+              target="_blank"
+            >
+              <Mail className="size-6" />
+              riad.younes@hotmail.com
+            </Link>
+          </div>
         </div>
       </div>
     </div>
