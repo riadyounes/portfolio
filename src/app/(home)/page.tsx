@@ -21,9 +21,11 @@ export default function Home() {
           >
             Riad Younes
           </h1>
-          <p className="text-xl font-medium text-zinc-300">
-            Graduado em análise e desenvolvimento de sistemas e engenharia de
-            software
+          <p className="text-lg font-medium text-zinc-300">
+            Apaixonado por tecnologia, com formação em Análise e Desenvolvimento
+            de Sistemas e Engenharia de Software, além de uma especialização
+            Full Stack. Busco constantemente desafios que impulsionem minha
+            evolução profissional.
           </p>
 
           <div className="grid w-full grid-cols-2 gap-6">
