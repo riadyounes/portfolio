@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 
-import { CardProject } from '@/components/card-project'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -14,7 +13,7 @@ export const metadata: Metadata = {
   title: 'Projetos',
 }
 
-export default function Projects() {
+export default function Contact() {
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-hidden bg-zinc-950">
       <div className="mx-auto w-full max-w-[1280px] p-8">
@@ -28,19 +27,11 @@ export default function Projects() {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbPage>Projetos</BreadcrumbPage>
+                <BreadcrumbPage>Contato</BreadcrumbPage>
               </BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
-          <div className="flex flex-col gap-4 text-white">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <CardProject
-                key={i}
-                title="Chatbot"
-                description="Chatbot usando SDK da vercel e OpenAI"
-              />
-            ))}
-          </div>
+          <div className="flex flex-col gap-4 text-white">teste</div>
         </div>
       </div>
     </div>

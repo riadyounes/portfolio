@@ -52,16 +52,12 @@ export default function Home() {
             </div>
             <div className="col-span-2 lg:col-span-1">
               <CardHome
-                href="/"
+                href="/contact"
                 title="Contato"
                 description="Vamos bater um papo! Aberto para novos projetos e ideias inovadoras."
               />
             </div>
           </div>
-
-          {/* <Button>Get Started</Button>
-          <Button variant="outline">Get Started</Button>
-          <Button variant="ghost">Get Started</Button> */}
         </div>
       </div>
     </div>
