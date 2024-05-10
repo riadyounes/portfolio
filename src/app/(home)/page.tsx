@@ -45,7 +45,7 @@ export default function Home() {
             </div>
             <div className="col-span-2 lg:col-span-1">
               <CardHome
-                href="/"
+                href="/blog"
                 title="Blog"
                 description="Dicas e tutoriais de programação, onde compartilho conhecimento e insights valiosos."
               />
