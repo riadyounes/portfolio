@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={inter.variable} suppressHydrationWarning>
-      <body className="antialiased">
+      <body className="relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-800 to-zinc-900 antialiased">
         {children}
         <Analytics />
       </body>
