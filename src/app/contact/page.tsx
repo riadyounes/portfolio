@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Projetos',
+  title: 'Contato',
 }
 
 export default function Contact() {
