@@ -1,6 +1,7 @@
 import './globals.css'
 
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 
 import { inter } from '@/utils/font'
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-800 to-zinc-900 antialiased">
         {children}
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
