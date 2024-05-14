@@ -32,7 +32,7 @@ export default async function PostPage({ params }: Props) {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-100">
+    <div className="min-h-screen bg-zinc-300">
       <Header post={post} />
 
       <article className="prose prose-zinc mx-auto px-4 py-12">
