@@ -32,7 +32,7 @@ export default async function PostPage({ params }: Props) {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50">
+    <div className="min-h-screen">
       {/* <Header project={project} views={views} />
       <ReportView slug={project.slug} /> */}
 
