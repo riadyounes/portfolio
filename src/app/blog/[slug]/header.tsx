@@ -70,7 +70,7 @@ export const Header: React.FC<Props> = ({ post }) => {
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                <BreadcrumbLink href="/">Blog</BreadcrumbLink>
+                <BreadcrumbLink href="/blog">Blog</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
