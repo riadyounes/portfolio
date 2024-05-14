@@ -11,12 +11,12 @@ type Props = {
 export const Article: React.FC<Props> = ({ post }) => {
   return (
     <Link href={`/blog/${post.slug}`}>
-      <article className="group rounded-lg bg-zinc-950/10 p-4 duration-1000 hover:bg-zinc-950/20 md:p-8">
+      <article className="group rounded-lg border border-zinc-600 bg-zinc-950/10 p-4 duration-1000 hover:bg-zinc-950/20 md:p-8">
         <div className="flex flex-wrap-reverse items-center justify-between ">
           <h2
             className={twMerge(
               jetBrainsMono.className,
-              'text-balance bg-gradient-to-br from-white via-white via-30% to-white/30 bg-clip-text text-xl font-bold leading-snug text-transparent lg:text-3xl',
+              'text-balance bg-gradient-to-br from-white via-white via-30% to-white/30 bg-clip-text text-xl font-bold leading-snug text-transparent md:text-3xl',
             )}
           >
             {post.title}

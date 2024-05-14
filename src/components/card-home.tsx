@@ -18,21 +18,25 @@ export function CardHome({
   ...props
 }: CardProps) {
   return (
-    <Link href={href}>
-      <div className={twMerge(className, 'group ')} {...props}>
-        <div className="flex h-40 flex-col gap-2 rounded-lg border border-zinc-500  from-white via-white via-30% to-white/30 px-8 py-4 hover:border-none group-hover:bg-gradient-to-br lg:gap-4">
-          <h3
-            className={twMerge(
-              jetBrainsMono.className,
-              'text-balance bg-gradient-to-br from-white via-white via-30% to-white/30 bg-clip-text text-3xl font-bold leading-snug tracking-widest text-transparent group-hover:text-zinc-950 lg:text-4xl lg:leading-snug',
-            )}
-          >
-            {title}
-          </h3>
-          <p className="line-clamp-3 text-zinc-400 group-hover:text-zinc-800">
-            {description}
-          </p>
-        </div>
+    <Link href={href} className="">
+      <div
+        className={twMerge(
+          className,
+          'group flex flex-col rounded-lg border border-zinc-600 p-4 transition duration-700 hover:bg-zinc-950/20 lg:h-48 lg:p-8 ',
+        )}
+        {...props}
+      >
+        <h3
+          className={twMerge(
+            jetBrainsMono.className,
+            'text-balance bg-gradient-to-br from-zinc-100 via-zinc-100 via-30% to-white/30 bg-clip-text text-3xl font-bold leading-snug tracking-widest text-transparent transition duration-700 group-hover:text-white lg:text-4xl lg:leading-snug',
+          )}
+        >
+          {title}
+        </h3>
+        <p className="line-clamp-3 text-zinc-400 transition duration-700 group-hover:text-zinc-200">
+          {description}
+        </p>
       </div>
     </Link>
   )
