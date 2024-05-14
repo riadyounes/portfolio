@@ -28,29 +28,23 @@ export default function Home() {
             evolução profissional.
           </p>
 
-          <div className="grid w-full grid-cols-2 gap-6">
-            <div className="col-span-2 lg:col-span-1">
+          <div className="grid w-full grid-cols-6 gap-6">
+            <div className="col-span-6 lg:col-span-2">
               <CardHome
                 href="/projects"
                 title="Projetos"
                 description="Aqui você encontrará uma coleção dos meus projetos, detalhes sobre as tecnologias utilizadas e muito mais."
               />
             </div>
-            <div className="col-span-2 lg:col-span-1">
-              <CardHome
-                href="/"
-                title="Experiência"
-                description="Explore minha jornada profissional, destacando minha experiência, habilidades e conquistas."
-              />
-            </div>
-            <div className="col-span-2 lg:col-span-1">
+
+            <div className="col-span-6 lg:col-span-2">
               <CardHome
                 href="/blog"
                 title="Blog"
                 description="Dicas e tutoriais de programação, onde compartilho conhecimento e insights valiosos."
               />
             </div>
-            <div className="col-span-2 lg:col-span-1">
+            <div className="col-span-6 lg:col-span-2">
               <CardHome
                 href="/contact"
                 title="Contato"
