@@ -35,8 +35,6 @@ function PostCard(post: Post) {
 export default function Blog() {
   const posts = allPosts
 
-  console.log(posts)
-
   return (
     <div className="relative flex min-h-screen w-full flex-col overflow-hidden">
       <div className="mx-auto w-full max-w-[1280px] p-8">

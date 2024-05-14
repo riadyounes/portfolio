@@ -25,8 +25,6 @@ export default async function PostPage({ params }: Props) {
   const slug = params?.slug
   const post = allPosts.find((post) => post.slug === slug)
 
-  console.log(allPosts, slug)
-
   if (!post) {
     notFound()
   }
