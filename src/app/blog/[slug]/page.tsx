@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation'
 
 import { Mdx } from '@/components/mdx'
 
+import { Header } from './header'
+
 export const revalidate = 60
 
 type Props = {
@@ -30,9 +32,8 @@ export default async function PostPage({ params }: Props) {
   }
 
   return (
-    <div className="min-h-screen">
-      {/* <Header project={project} views={views} />
-      <ReportView slug={project.slug} /> */}
+    <div className="min-h-screen bg-zinc-100">
+      <Header post={post} />
 
       <article className="prose prose-zinc mx-auto px-4 py-12">
         <Mdx code={post.body.code} />

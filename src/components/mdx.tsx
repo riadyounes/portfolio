@@ -13,7 +13,7 @@ const components = {
   h1: ({ className, ...props }) => (
     <h1
       className={clsx(
-        'mt-2 scroll-m-20 text-4xl font-bold tracking-tight text-zinc-100',
+        'mt-2 scroll-m-20 text-4xl font-bold tracking-tight',
         className,
       )}
       {...props}
@@ -22,7 +22,7 @@ const components = {
   h2: ({ className, ...props }) => (
     <h2
       className={clsx(
-        'mt-10 scroll-m-20 border-b border-b-zinc-200 pb-1 text-3xl font-semibold tracking-tight text-zinc-100 first:mt-0',
+        'mt-10 scroll-m-20 border-b border-b-zinc-800 pb-1 text-3xl font-semibold tracking-tight first:mt-0',
         className,
       )}
       {...props}
@@ -67,7 +67,7 @@ const components = {
   a: ({ className, ...props }) => (
     <Link
       className={clsx(
-        'font-medium text-zinc-400 underline underline-offset-4',
+        'font-medium text-zinc-900 underline underline-offset-4',
         className,
       )}
       {...props}
@@ -75,10 +75,7 @@ const components = {
   ),
   p: ({ className, ...props }) => (
     <p
-      className={clsx(
-        'leading-7 text-zinc-400 [&:not(:first-child)]:mt-6',
-        className,
-      )}
+      className={clsx('leading-7 [&:not(:first-child)]:mt-6', className)}
       {...props}
     />
   ),
@@ -149,17 +146,14 @@ const components = {
   ),
   pre: ({ className, ...props }) => (
     <pre
-      className={clsx(
-        'mb-4 mt-6 overflow-x-auto rounded-lg bg-zinc-900 py-4',
-        className,
-      )}
+      className={clsx('mb-4 mt-6 overflow-x-auto rounded-lg  py-4', className)}
       {...props}
     />
   ),
   code: ({ className, ...props }) => (
     <code
       className={clsx(
-        'relative  px-[0.3rem] py-[0.2rem] font-mono text-sm text-zinc-400',
+        'relative px-[0.3rem] py-[0.2rem] font-mono text-sm text-zinc-100',
         className,
       )}
       {...props}
