@@ -15,7 +15,7 @@ export default function Home() {
       <div className="z-20 mx-auto max-w-[1280px] px-6">
         <div className="flex flex-col items-center gap-8">
           <div className="flex flex-col items-center gap-6">
-            <Image src="/logo-white2.svg" alt="" width={150} height={150} />
+            <Image src="/logo-white.svg" alt="" width={150} height={150} />
             <h1
               className={twMerge(
                 robotoMono.className,
