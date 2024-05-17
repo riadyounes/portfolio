@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { HTMLProps } from 'react'
 import { twMerge } from 'tailwind-merge'
 
-import { jetBrainsMono } from '@/utils/font'
+import { robotoMono } from '@/utils/font'
 
 export interface CardProps extends HTMLProps<HTMLDivElement> {
   title: string
@@ -22,14 +22,14 @@ export function CardHome({
       <div
         className={twMerge(
           className,
-          'group flex flex-col rounded-lg border border-zinc-600 p-4 transition duration-700 hover:bg-zinc-950/20 lg:h-48 lg:p-8 ',
+          'group flex h-36 flex-col rounded-lg border border-zinc-600 p-4 transition duration-700 hover:bg-zinc-800/20 lg:h-48 lg:p-8 ',
         )}
         {...props}
       >
         <h3
           className={twMerge(
-            jetBrainsMono.className,
-            'text-balance bg-gradient-to-br from-zinc-100 via-zinc-100 via-30% to-white/30 bg-clip-text text-3xl font-bold leading-snug tracking-widest text-transparent transition duration-700 group-hover:text-white lg:text-4xl lg:leading-snug',
+            robotoMono.className,
+            'text-balance bg-gradient-to-br from-zinc-100 via-zinc-100 via-30% to-white/30 bg-clip-text text-3xl font-bold leading-snug tracking-tight text-transparent transition duration-700 group-hover:text-white lg:text-4xl lg:leading-snug',
           )}
         >
           {title}

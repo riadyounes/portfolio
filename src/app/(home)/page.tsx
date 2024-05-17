@@ -1,8 +1,9 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { twMerge } from 'tailwind-merge'
 
 import { CardHome } from '@/components/card-home'
-import { jetBrainsMono } from '@/utils/font'
+import { robotoMono } from '@/utils/font'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -12,15 +13,18 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden py-4">
       <div className="z-20 mx-auto max-w-[1280px] px-6">
-        <div className="flex flex-col items-center gap-4">
-          <h1
-            className={twMerge(
-              jetBrainsMono.className,
-              'text-balance bg-gradient-to-br from-white via-white via-30% to-white/30 bg-clip-text text-5xl font-bold leading-snug tracking-widest text-transparent lg:text-6xl lg:leading-snug',
-            )}
-          >
-            Riad Younes
-          </h1>
+        <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-6">
+            <Image src="/logo-white2.svg" alt="" width={150} height={150} />
+            <h1
+              className={twMerge(
+                robotoMono.className,
+                'text-balance text-center text-5xl font-bold leading-snug tracking-tighter text-zinc-200 lg:text-6xl',
+              )}
+            >
+              Riad Younes
+            </h1>
+          </div>
           <p className="text-lg font-medium text-zinc-300">
             Apaixonado por tecnologia, com formação em Análise e Desenvolvimento
             de Sistemas e Engenharia de Software, além de uma especialização
