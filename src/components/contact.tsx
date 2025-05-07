@@ -40,7 +40,7 @@ export default function Contact() {
     {
       name: 'LinkedIn',
       icon: <Linkedin className="h-5 w-5" />,
-      link: 'https://linkedin.com/in/riadyounes',
+      link: 'https://www.linkedin.com/in/riad-younes-6a5348187/',
       color: 'hover:bg-blue-700',
     },
     {
