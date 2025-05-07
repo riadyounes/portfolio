@@ -6,6 +6,16 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  }
 }
 
 export default withContentlayer(nextConfig)
