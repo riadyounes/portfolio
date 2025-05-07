@@ -42,25 +42,39 @@ export default function About() {
 
   const experiences = [
     {
-      position: 'Desenvolvedor FullStack Senior',
-      company: 'Tech Solutions',
-      period: '2021 - Presente',
+      position: 'Desenvolvedor FullStack Pleno',
+      company: 'Code Group',
+      period: 'nov de 2024 - abr de 2025',
       description:
-        'Desenvolvimento de aplicações web escaláveis utilizando React, Node.js e AWS.',
+        'Desenvolvo e mantenho aplicações escaláveis com Node.js, NestJS, React, Next.js e TypeScript. Trabalho com testes automatizados (Jest, Cypress), Storybook, PostgreSQL e pipelines de CI/CD, garantindo qualidade, performance e automação nos processos de deploy.',
+    },
+    {
+      position: 'Desenvolvedor Frontend Pleno',
+      company: 'Mutant',
+      period: 'set de 2024 - nov de 2024',
+      description:
+        'Atuei no desenvolvimento de funcionalidades e melhorias para o App da Vivo, utilizando React, Next.js e TypeScript, com foco em qualidade de código por meio de testes automatizados (Jest, Cypress, Storybook e testes de mutação) e entregas ágeis.',
+    },
+    {
+      position: 'Engenheiro de Software Pleno',
+      company: 'Tree ID',
+      period: 'set de 2022 - set de 2024',
+      description:
+        'Desenvolvi sistemas web escaláveis com React (Next.js) e Node.js (NestJS), aplicando testes com Vitest, criando dashboards no Metabase e atuando em todo o ciclo de desenvolvimento com foco em performance, segurança e metodologias ágeis.',
+    },
+    {
+      position: 'Desenvolvedor FullStack Junior',
+      company: 'Desbravador Software Ltda.',
+      period: 'set de 2021 - set de 2022',
+      description:
+        'Desenvolvi um sistema completo de gerenciamento de eventos com React, Python e Java (Spring Boot), aplicando testes E2E e unitários, integração de APIs RESTful, uso de Docker e foco em performance e experiência do usuário em ambiente ágil.',
     },
     {
       position: 'Desenvolvedor Frontend',
-      company: 'Creative Agency',
-      period: '2019 - 2021',
+      company: 'BraPay',
+      period: 'mai de 2021 - set de 2021',
       description:
-        'Criação de interfaces responsivas e otimizadas para diversos clientes.',
-    },
-    {
-      position: 'Desenvolvedor Web Júnior',
-      company: 'Startup Innovations',
-      period: '2017 - 2019',
-      description:
-        'Desenvolvimento de websites e aplicações web utilizando HTML, CSS e JavaScript.',
+        'Desenvolvi dashboards administrativos e sites responsivos em WordPress com customizações em HTML, CSS e JavaScript, integrando plugins personalizados e otimizando SEO, com foco em usabilidade, performance e entregas pontuais.',
     },
   ]
 
